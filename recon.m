@@ -1,8 +1,8 @@
-function S = verasonics_recon_core(cfg, rf)
+function S = recon(cfg, rf)
 % cfg: acquisition-matched Resource, Trans, PData, TW, TX, Receive, TGC;
 % retain RcvFilter/RcvProfile when used. PData coordinates are in wavelengths.
 % rf: int16 [samples_per_angle * angles, channels, compound_frames].
-% S = verasonics_recon_core(cfg, rf); save('recon.mat','-struct','S','-v7.3');
+% S = recon(cfg, rf); save('recon.mat','-struct','S','-v7.3');
 % In the Verasonics workspace: filename = 'recon.mat'; VSX
 % Image output: ImgData{1}(:,:,1,:); requires the licensed Verasonics SDK.
 required = {'Resource','Trans','PData','TW','TX','Receive','TGC'};

@@ -1,4 +1,4 @@
-function out = pwv_core(image, peaks, x_m, z_m, fs)
+function out = pwv(image, peaks, x_m, z_m, fs)
 % image: [depth,lateral,time] intensity; peaks: two [row,column] wall points.
 % x_m/z_m: image coordinates in metres; fs: measured image frame rate (Hz).
 % One continuous segment; requires Signal Processing Toolbox. PWV is signed m/s.
